@@ -27,19 +27,6 @@
 		<xsl:apply-templates mode="ArrayElement" select="Row"/>
 	</xsl:template>
 	
-	<!-- find element start with LIST 
-	<xsl:template match="*[starts-with(name(), 'LIST_')]">
-		<xsl:text>"</xsl:text>
-		<xsl:value-of select="name()"/>
-		<xsl:text>"</xsl:text>
-		<xsl:text>:[</xsl:text>
-		<xsl:call-template name="PropertiesList"/>
-		<xsl:text>]</xsl:text>
-		<xsl:if test="following-sibling::*">
-			<xsl:text>,</xsl:text>
-		</xsl:if>
-	</xsl:template> -->
-	
 	<!-- find element start with LIST and have a child with name Rowset-->
 	<xsl:template match="*[starts-with(name(), 'LIST_')]">
 		<xsl:text>"</xsl:text>
@@ -48,7 +35,7 @@
 		<xsl:text>:[</xsl:text>
 		<xsl:choose>
 			<xsl:when test="name(*[*]) = 'Rowset'">
-				<xsl:call-template name="PropertiesNestedObject" />
+			    <xsl:call-template name="PropertiesNestedObject"/>
 			</xsl:when>
 			<xsl:otherwise>
 				<xsl:call-template name="PropertiesList"/>
@@ -62,10 +49,10 @@
 	
 	<!-- List Properties -->
 	<xsl:template name="PropertiesList">
-		<xsl:apply-templates mode="ArrayElement" select="*[*]"/>
+		<xsl:apply-templates mode="ArrayElement" select="*"/>
 	</xsl:template>
 	
-		<!-- List PropertiesNestedObject -->
+	<!-- List PropertiesNestedObject -->
 	<xsl:template name="PropertiesNestedObject">
 		<xsl:apply-templates mode="ArrayElement" select="*/Row"/>
 	</xsl:template>

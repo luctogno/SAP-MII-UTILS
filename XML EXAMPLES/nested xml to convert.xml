@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?><Rowsets DateCreated="2017-03-16T14:40:50" EndDate="2017-03-16T14:12:54" StartDate="2017-03-16T14:12:54" Version="14.0 SP5 Patch 17 (24-dic-2014)">
+    <Rowset>
+        <Columns>
+            <Column Description="" MaxRange="1" MinRange="0" Name="STATE_ID" SQLDataType="4" SourceColumn="STATE_ID"/>
+            <Column Description="" MaxRange="1" MinRange="0" Name="STATE_DESCRIPTION" SQLDataType="1" SourceColumn="STATE_DESCRIPTION"/>
+            <Column Description="" MaxRange="1" MinRange="0" Name="MATCODE" SQLDataType="1" SourceColumn="MATCODE"/>
+            <Column Description="" MaxRange="1" MinRange="0" Name="FP_ID" SQLDataType="1" SourceColumn="FP_ID"/>
+            <Column Description="" MaxRange="1" MinRange="0" Name="LIST_TESTS" SQLDataType="1" SourceColumn="LIST_TESTS"/>
+        </Columns>
+        <Row>
+            <STATE_ID>21</STATE_ID>
+            <STATE_DESCRIPTION>DA ROTTAMARE</STATE_DESCRIPTION>
+            <MATCODE>815005310003</MATCODE>
+            <FP_ID>2320000470x</FP_ID>
+            <LIST_TESTS>
+                <Rowset>
+                    <Columns>
+                        <Column Description="" MaxRange="1" MinRange="0" Name="BATCHID" SQLDataType="1" SourceColumn="BATCHID"/>
+                        <Column Description="" MaxRange="1" MinRange="0" Name="TEST_TIMESTAMP" SQLDataType="1" SourceColumn="TEST_TIMESTAMP"/>
+                        <Column Description="" MaxRange="1" MinRange="0" Name="TEST" SQLDataType="1" SourceColumn="TEST"/>
+                        <Column Description="" MaxRange="1" MinRange="0" Name="TEST_DESCRIPTION" SQLDataType="1" SourceColumn="TEST_DESCRIPTION"/>
+                        <Column Description="" MaxRange="1" MinRange="0" Name="TEST_LABEL_DESCRIPTION" SQLDataType="1" SourceColumn="TEST_LABEL_DESCRIPTION"/>
+                        <Column Description="" MaxRange="1" MinRange="0" Name="TEST_LABEL_VALUE" SQLDataType="1" SourceColumn="TEST_LABEL_VALUE"/>
+                        <Column Description="" MaxRange="1" MinRange="0" Name="TEST_LABEL_MEAS_UNIT" SQLDataType="1" SourceColumn="TEST_LABEL_MEAS_UNIT"/>
+                    </Columns>
+                    <Row>
+                        <BATCHID>R173102320000</BATCHID>
+                        <TEST_TIMESTAMP>2017-03-08T15:48:24</TEST_TIMESTAMP>
+                        <TEST>X0005</TEST>
+                        <TEST_DESCRIPTION>Tenuta Aperto Minimo</TEST_DESCRIPTION>
+                        <TEST_LABEL_DESCRIPTION>Cod.AP</TEST_LABEL_DESCRIPTION>
+                        <TEST_LABEL_VALUE>82100</TEST_LABEL_VALUE>
+                        <TEST_LABEL_MEAS_UNIT>---</TEST_LABEL_MEAS_UNIT>
+                    </Row>
+                    <Row>
+                        <BATCHID>R173102320000</BATCHID>
+                        <TEST_TIMESTAMP>2017-03-08T15:48:24</TEST_TIMESTAMP>
+                        <TEST>X0005</TEST>
+                        <TEST_DESCRIPTION>Tenuta Aperto Minimo</TEST_DESCRIPTION>
+                        <TEST_LABEL_DESCRIPTION>Pressione</TEST_LABEL_DESCRIPTION>
+                        <TEST_LABEL_VALUE>232.05</TEST_LABEL_VALUE>
+                        <TEST_LABEL_MEAS_UNIT>mbar</TEST_LABEL_MEAS_UNIT>
+                    </Row>
+                    <Row>
+                        <BATCHID>R173102320000</BATCHID>
+                        <TEST_TIMESTAMP>2017-03-08T15:48:24</TEST_TIMESTAMP>
+                        <TEST>X0005</TEST>
+                        <TEST_DESCRIPTION>Tenuta Aperto Minimo</TEST_DESCRIPTION>
+                        <TEST_LABEL_DESCRIPTION>Perdita</TEST_LABEL_DESCRIPTION>
+                        <TEST_LABEL_VALUE>-0.60</TEST_LABEL_VALUE>
+                        <TEST_LABEL_MEAS_UNIT>---</TEST_LABEL_MEAS_UNIT>
+                    </Row>
+                    <Row>
+                        <BATCHID>R173102320000</BATCHID>
+                        <TEST_TIMESTAMP>2017-03-08T15:48:24</TEST_TIMESTAMP>
+                        <TEST>X0005</TEST>
+                        <TEST_DESCRIPTION>Tenuta Aperto Minimo</TEST_DESCRIPTION>
+                        <TEST_LABEL_DESCRIPTION>Soglia Inf.</TEST_LABEL_DESCRIPTION>
+                        <TEST_LABEL_VALUE>10.00</TEST_LABEL_VALUE>
+                        <TEST_LABEL_MEAS_UNIT>---</TEST_LABEL_MEAS_UNIT>
+                    </Row>
+                    <Row>
+                        <BATCHID>R173102320000</BATCHID>
+                        <TEST_TIMESTAMP>2017-03-08T15:48:24</TEST_TIMESTAMP>
+                        <TEST>X0005</TEST>
+                        <TEST_DESCRIPTION>Tenuta Aperto Minimo</TEST_DESCRIPTION>
+                        <TEST_LABEL_DESCRIPTION>Soglia Sup.</TEST_LABEL_DESCRIPTION>
+                        <TEST_LABEL_VALUE>8.00</TEST_LABEL_VALUE>
+                        <TEST_LABEL_MEAS_UNIT>---</TEST_LABEL_MEAS_UNIT>
+                    </Row>
+                    <Row>
+                        <BATCHID>R173102320000</BATCHID>
+                        <TEST_TIMESTAMP>2017-03-08T15:48:24</TEST_TIMESTAMP>
+                        <TEST>X0006</TEST>
+                        <TEST_DESCRIPTION>Portata Minimo Assoluta</TEST_DESCRIPTION>
+                        <TEST_LABEL_DESCRIPTION>Cod.AP</TEST_LABEL_DESCRIPTION>
+                        <TEST_LABEL_VALUE>82300</TEST_LABEL_VALUE>
+                        <TEST_LABEL_MEAS_UNIT>---</TEST_LABEL_MEAS_UNIT>
+                    </Row>
+                    <Row>
+                        <BATCHID>R173102320000</BATCHID>
+                        <TEST_TIMESTAMP>2017-03-08T15:48:24</TEST_TIMESTAMP>
+                        <TEST>X0006</TEST>
+                        <TEST_DESCRIPTION>Portata Minimo Assoluta</TEST_DESCRIPTION>
+                        <TEST_LABEL_DESCRIPTION>Pressione</TEST_LABEL_DESCRIPTION>
+                        <TEST_LABEL_VALUE>50.58</TEST_LABEL_VALUE>
+                        <TEST_LABEL_MEAS_UNIT>mbar</TEST_LABEL_MEAS_UNIT>
+                    </Row>
+                    <Row>
+                        <BATCHID>R173102320000</BATCHID>
+                        <TEST_TIMESTAMP>2017-03-08T15:48:24</TEST_TIMESTAMP>
+                        <TEST>X0006</TEST>
+                        <TEST_DESCRIPTION>Portata Minimo Assoluta</TEST_DESCRIPTION>
+                        <TEST_LABEL_DESCRIPTION>Portata</TEST_LABEL_DESCRIPTION>
+                        <TEST_LABEL_VALUE>38.17</TEST_LABEL_VALUE>
+                        <TEST_LABEL_MEAS_UNIT>---</TEST_LABEL_MEAS_UNIT>
+                    </Row>
+                    <Row>
+                        <BATCHID>R173102320000</BATCHID>
+                        <TEST_TIMESTAMP>2017-03-08T15:48:24</TEST_TIMESTAMP>
+                        <TEST>X0006</TEST>
+                        <TEST_DESCRIPTION>Portata Minimo Assoluta</TEST_DESCRIPTION>
+                        <TEST_LABEL_DESCRIPTION>Scostamento</TEST_LABEL_DESCRIPTION>
+                        <TEST_LABEL_VALUE>-4.04</TEST_LABEL_VALUE>
+                        <TEST_LABEL_MEAS_UNIT>---</TEST_LABEL_MEAS_UNIT>
+                    </Row>
+                    <Row>
+                        <BATCHID>R173102320000</BATCHID>
+                        <TEST_TIMESTAMP>2017-03-08T15:48:24</TEST_TIMESTAMP>
+                        <TEST>X0006</TEST>
+                        <TEST_DESCRIPTION>Portata Minimo Assoluta</TEST_DESCRIPTION>
+                        <TEST_LABEL_DESCRIPTION>Soglia Inf.</TEST_LABEL_DESCRIPTION>
+                        <TEST_LABEL_VALUE>9.00</TEST_LABEL_VALUE>
+                        <TEST_LABEL_MEAS_UNIT>---</TEST_LABEL_MEAS_UNIT>
+                    </Row>
+                    <Row>
+                        <BATCHID>R173102320000</BATCHID>
+                        <TEST_TIMESTAMP>2017-03-08T15:48:24</TEST_TIMESTAMP>
+                        <TEST>X0006</TEST>
+                        <TEST_DESCRIPTION>Portata Minimo Assoluta</TEST_DESCRIPTION>
+                        <TEST_LABEL_DESCRIPTION>Soglia Sup.</TEST_LABEL_DESCRIPTION>
+                        <TEST_LABEL_VALUE>9.00</TEST_LABEL_VALUE>
+                        <TEST_LABEL_MEAS_UNIT>---</TEST_LABEL_MEAS_UNIT>
+                    </Row>
+                    <Row>
+                        <BATCHID>R173102320000</BATCHID>
+                        <TEST_TIMESTAMP>2017-03-08T15:48:24</TEST_TIMESTAMP>
+                        <TEST>X0008</TEST>
+                        <TEST_DESCRIPTION>Tenuta in Chiuso</TEST_DESCRIPTION>
+                        <TEST_LABEL_DESCRIPTION>Cod.AP</TEST_LABEL_DESCRIPTION>
+                        <TEST_LABEL_VALUE>82200</TEST_LABEL_VALUE>
+                        <TEST_LABEL_MEAS_UNIT>---</TEST_LABEL_MEAS_UNIT>
+                    </Row>
+                    <Row>
+                        <BATCHID>R173102320000</BATCHID>
+                        <TEST_TIMESTAMP>2017-03-08T15:48:24</TEST_TIMESTAMP>
+                        <TEST>X0008</TEST>
+                        <TEST_DESCRIPTION>Tenuta in Chiuso</TEST_DESCRIPTION>
+                        <TEST_LABEL_DESCRIPTION>Pressione</TEST_LABEL_DESCRIPTION>
+                        <TEST_LABEL_VALUE>227.75</TEST_LABEL_VALUE>
+                        <TEST_LABEL_MEAS_UNIT>---</TEST_LABEL_MEAS_UNIT>
+                    </Row>
+                    <Row>
+                        <BATCHID>R173102320000</BATCHID>
+                        <TEST_TIMESTAMP>2017-03-08T15:48:24</TEST_TIMESTAMP>
+                        <TEST>X0008</TEST>
+                        <TEST_DESCRIPTION>Tenuta in Chiuso</TEST_DESCRIPTION>
+                        <TEST_LABEL_DESCRIPTION>Perdita</TEST_LABEL_DESCRIPTION>
+                        <TEST_LABEL_VALUE>-0.43</TEST_LABEL_VALUE>
+                        <TEST_LABEL_MEAS_UNIT>---</TEST_LABEL_MEAS_UNIT>
+                    </Row>
+                    <Row>
+                        <BATCHID>R173102320000</BATCHID>
+                        <TEST_TIMESTAMP>2017-03-08T15:48:24</TEST_TIMESTAMP>
+                        <TEST>X0008</TEST>
+                        <TEST_DESCRIPTION>Tenuta in Chiuso</TEST_DESCRIPTION>
+                        <TEST_LABEL_DESCRIPTION>Soglia Inf.</TEST_LABEL_DESCRIPTION>
+                        <TEST_LABEL_VALUE>10.00</TEST_LABEL_VALUE>
+                        <TEST_LABEL_MEAS_UNIT>---</TEST_LABEL_MEAS_UNIT>
+                    </Row>
+                    <Row>
+                        <BATCHID>R173102320000</BATCHID>
+                        <TEST_TIMESTAMP>2017-03-08T15:48:24</TEST_TIMESTAMP>
+                        <TEST>X0008</TEST>
+                        <TEST_DESCRIPTION>Tenuta in Chiuso</TEST_DESCRIPTION>
+                        <TEST_LABEL_DESCRIPTION>Soglia Sup.</TEST_LABEL_DESCRIPTION>
+                        <TEST_LABEL_VALUE>8.00</TEST_LABEL_VALUE>
+                        <TEST_LABEL_MEAS_UNIT>---</TEST_LABEL_MEAS_UNIT>
+                    </Row>
+                    <Row>
+                        <BATCHID>R173102320000</BATCHID>
+                        <TEST_TIMESTAMP>2017-03-08T15:48:24</TEST_TIMESTAMP>
+                        <TEST>X0014</TEST>
+                        <TEST_DESCRIPTION>Tenuta Cracking Test</TEST_DESCRIPTION>
+                        <TEST_LABEL_DESCRIPTION>Cod.AP</TEST_LABEL_DESCRIPTION>
+                        <TEST_LABEL_VALUE>00000</TEST_LABEL_VALUE>
+                        <TEST_LABEL_MEAS_UNIT>---</TEST_LABEL_MEAS_UNIT>
+                    </Row>
+                    <Row>
+                        <BATCHID>R173102320000</BATCHID>
+                        <TEST_TIMESTAMP>2017-03-08T15:48:24</TEST_TIMESTAMP>
+                        <TEST>X0014</TEST>
+                        <TEST_DESCRIPTION>Tenuta Cracking Test</TEST_DESCRIPTION>
+                        <TEST_LABEL_DESCRIPTION>Pressione</TEST_LABEL_DESCRIPTION>
+                        <TEST_LABEL_VALUE>0.00</TEST_LABEL_VALUE>
+                        <TEST_LABEL_MEAS_UNIT>---</TEST_LABEL_MEAS_UNIT>
+                    </Row>
+                    <Row>
+                        <BATCHID>R173102320000</BATCHID>
+                        <TEST_TIMESTAMP>2017-03-08T15:48:24</TEST_TIMESTAMP>
+                        <TEST>X0014</TEST>
+                        <TEST_DESCRIPTION>Tenuta Cracking Test</TEST_DESCRIPTION>
+                        <TEST_LABEL_DESCRIPTION>Perdita</TEST_LABEL_DESCRIPTION>
+                        <TEST_LABEL_VALUE>0.00</TEST_LABEL_VALUE>
+                        <TEST_LABEL_MEAS_UNIT>---</TEST_LABEL_MEAS_UNIT>
+                    </Row>
+                    <Row>
+                        <BATCHID>R173102320000</BATCHID>
+                        <TEST_TIMESTAMP>2017-03-08T15:48:24</TEST_TIMESTAMP>
+                        <TEST>X0014</TEST>
+                        <TEST_DESCRIPTION>Tenuta Cracking Test</TEST_DESCRIPTION>
+                        <TEST_LABEL_DESCRIPTION>Soglia Inf.</TEST_LABEL_DESCRIPTION>
+                        <TEST_LABEL_VALUE>0.00</TEST_LABEL_VALUE>
+                        <TEST_LABEL_MEAS_UNIT>---</TEST_LABEL_MEAS_UNIT>
+                    </Row>
+                    <Row>
+                        <BATCHID>R173102320000</BATCHID>
+                        <TEST_TIMESTAMP>2017-03-08T15:48:24</TEST_TIMESTAMP>
+                        <TEST>X0014</TEST>
+                        <TEST_DESCRIPTION>Tenuta Cracking Test</TEST_DESCRIPTION>
+                        <TEST_LABEL_DESCRIPTION>Soglia Sup.</TEST_LABEL_DESCRIPTION>
+                        <TEST_LABEL_VALUE>0.00</TEST_LABEL_VALUE>
+                        <TEST_LABEL_MEAS_UNIT>---</TEST_LABEL_MEAS_UNIT>
+                    </Row>
+                    <Row>
+                        <BATCHID>R173102320000</BATCHID>
+                        <TEST_TIMESTAMP>2017-03-08T15:48:24</TEST_TIMESTAMP>
+                        <TEST>X0015</TEST>
+                        <TEST_DESCRIPTION>Portata Regolata assoluta</TEST_DESCRIPTION>
+                        <TEST_LABEL_DESCRIPTION>Cod.AP</TEST_LABEL_DESCRIPTION>
+                        <TEST_LABEL_VALUE>82404</TEST_LABEL_VALUE>
+                        <TEST_LABEL_MEAS_UNIT>---</TEST_LABEL_MEAS_UNIT>
+                    </Row>
+                    <Row>
+                        <BATCHID>R173102320000</BATCHID>
+                        <TEST_TIMESTAMP>2017-03-08T15:48:24</TEST_TIMESTAMP>
+                        <TEST>X0015</TEST>
+                        <TEST_DESCRIPTION>Portata Regolata assoluta</TEST_DESCRIPTION>
+                        <TEST_LABEL_DESCRIPTION>Pressione</TEST_LABEL_DESCRIPTION>
+                        <TEST_LABEL_VALUE>50.66</TEST_LABEL_VALUE>
+                        <TEST_LABEL_MEAS_UNIT>---</TEST_LABEL_MEAS_UNIT>
+                    </Row>
+                    <Row>
+                        <BATCHID>R173102320000</BATCHID>
+                        <TEST_TIMESTAMP>2017-03-08T15:48:24</TEST_TIMESTAMP>
+                        <TEST>X0015</TEST>
+                        <TEST_DESCRIPTION>Portata Regolata assoluta</TEST_DESCRIPTION>
+                        <TEST_LABEL_DESCRIPTION>Portata</TEST_LABEL_DESCRIPTION>
+                        <TEST_LABEL_VALUE>84.56</TEST_LABEL_VALUE>
+                        <TEST_LABEL_MEAS_UNIT>---</TEST_LABEL_MEAS_UNIT>
+                    </Row>
+                    <Row>
+                        <BATCHID>R173102320000</BATCHID>
+                        <TEST_TIMESTAMP>2017-03-08T15:48:24</TEST_TIMESTAMP>
+                        <TEST>X0015</TEST>
+                        <TEST_DESCRIPTION>Portata Regolata assoluta</TEST_DESCRIPTION>
+                        <TEST_LABEL_DESCRIPTION>Scostamento</TEST_LABEL_DESCRIPTION>
+                        <TEST_LABEL_VALUE>-0.28</TEST_LABEL_VALUE>
+                        <TEST_LABEL_MEAS_UNIT>---</TEST_LABEL_MEAS_UNIT>
+                    </Row>
+                    <Row>
+                        <BATCHID>R173102320000</BATCHID>
+                        <TEST_TIMESTAMP>2017-03-08T15:48:24</TEST_TIMESTAMP>
+                        <TEST>X0015</TEST>
+                        <TEST_DESCRIPTION>Portata Regolata assoluta</TEST_DESCRIPTION>
+                        <TEST_LABEL_DESCRIPTION>Soglia Inf.</TEST_LABEL_DESCRIPTION>
+                        <TEST_LABEL_VALUE>7.00</TEST_LABEL_VALUE>
+                        <TEST_LABEL_MEAS_UNIT>---</TEST_LABEL_MEAS_UNIT>
+                    </Row>
+                    <Row>
+                        <BATCHID>R173102320000</BATCHID>
+                        <TEST_TIMESTAMP>2017-03-08T15:48:24</TEST_TIMESTAMP>
+                        <TEST>X0015</TEST>
+                        <TEST_DESCRIPTION>Portata Regolata assoluta</TEST_DESCRIPTION>
+                        <TEST_LABEL_DESCRIPTION>Soglia Sup.</TEST_LABEL_DESCRIPTION>
+                        <TEST_LABEL_VALUE>7.00</TEST_LABEL_VALUE>
+                        <TEST_LABEL_MEAS_UNIT>---</TEST_LABEL_MEAS_UNIT>
+                    </Row>
+                </Rowset>
+            </LIST_TESTS>
+        </Row>
+    </Rowset>
+</Rowsets>

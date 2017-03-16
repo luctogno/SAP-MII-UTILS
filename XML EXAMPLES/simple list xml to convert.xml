@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><Rowsets DateCreated="2017-03-16T15:09:34" EndDate="2017-02-24T11:06:07" StartDate="2017-02-24T11:06:07" Version="14.0 SP5 Patch 17 (24-dic-2014)">
+    <Rowset>
+        <Columns>
+            <Column Description="" MaxRange="1" MinRange="0" Name="FP_ID" SQLDataType="1" SourceColumn="FP_ID"/>
+            <Column Description="" MaxRange="1" MinRange="0" Name="STATE_ID" SQLDataType="4" SourceColumn="STATE_ID"/>
+            <Column Description="" MaxRange="1" MinRange="0" Name="STATE_DESCRIPTION" SQLDataType="1" SourceColumn="STATE_DESCRIPTION"/>
+            <Column Description="" MaxRange="1" MinRange="0" Name="LIST_FP_ID" SQLDataType="1" SourceColumn="LIST_FP_ID"/>
+            <Column Description="" MaxRange="1" MinRange="0" Name="FP_ITEMS_COUNT" SQLDataType="4" SourceColumn="FP_ITEMS_COUNT"/>
+            <Column Description="" MaxRange="1" MinRange="0" Name="MATCODE" SQLDataType="1" SourceColumn="MATCODE"/>
+        </Columns>
+        <Row>
+            <FP_ID>2320000470y</FP_ID>
+            <STATE_ID>11</STATE_ID>
+            <STATE_DESCRIPTION>BUONO, DA IMBALLARE MANUALMENTE</STATE_DESCRIPTION>
+            <LIST_FP_ID>
+                <FP_ID>2320000470y</FP_ID>
+                <FP_ID>2320000470x</FP_ID>
+                <FP_ID>2320000470z</FP_ID>
+            </LIST_FP_ID>
+            <FP_ITEMS_COUNT>3</FP_ITEMS_COUNT>
+            <MATCODE>815005310003</MATCODE>
+        </Row>
+    </Rowset>
+    <Messages>
+        <Message>OK</Message>
+    </Messages>
+</Rowsets>
