@@ -68,7 +68,7 @@
 		<xsl:choose>
 			<xsl:when test="not(*)">
 				<xsl:text>"</xsl:text>
-				<xsl:call-template name="escapeQuote"/>
+				<xsl:call-template name="jsonTextEscape"/>
 				<xsl:text>"</xsl:text>
 			</xsl:when>
 			<xsl:when test="count(*[name()=$childName]) &gt; 1">
@@ -88,18 +88,46 @@
 			<xsl:text>,</xsl:text>
 		</xsl:if>
 	</xsl:template>
-	<xsl:template name="escapeQuote">
-		<xsl:param name="pText" select="."/>
-		<xsl:if test="string-length($pText) >0">
-			<xsl:value-of select= "substring-before(concat($pText, '&quot;'), '&quot;')"/>
-			<xsl:if test="contains($pText, '&quot;')">
-				<xsl:text>\"</xsl:text>
-				<xsl:call-template name="escapeQuote">
-					<xsl:with-param name="pText" select= "substring-after($pText, '&quot;')"/>
-				</xsl:call-template>
-			</xsl:if>
-		</xsl:if>
+	
+	<xsl:template name="jsonTextEscape">
+		<xsl:call-template name="escapeQuote">
+		  <xsl:with-param name="pText">
+			<xsl:call-template name="jsonescape">
+			  <xsl:with-param name="str" select="." />
+			</xsl:call-template>          
+		  </xsl:with-param>
+		</xsl:call-template>
 	</xsl:template>
+
+<xsl:template name="escapeQuote">
+	<xsl:param name="pText" select="concat(normalize-space(.), '')" />
+		<xsl:if test="string-length($pText) >0">
+			  <xsl:value-of select="substring-before(concat($pText, '&quot;'), '&quot;')" />
+
+			  <xsl:if test="contains($pText, '&quot;')">
+				  <xsl:text>\"</xsl:text>    
+				  <xsl:call-template name="escapeQuote">
+					  <xsl:with-param name="pText" select="substring-after($pText, '&quot;')" />
+				  </xsl:call-template>
+			  </xsl:if>
+			  
+		  </xsl:if>
+	  </xsl:template>
+
+    <xsl:template name="jsonescape">
+        <xsl:param name="str" select="."/>
+        <xsl:choose>
+            <xsl:when test="contains($str, '\')">
+                <xsl:value-of select="concat(substring-before($str, '\'), '\\' )"/>
+                <xsl:call-template name="jsonescape">
+                    <xsl:with-param name="str" select="substring-after($str, '\')"/>
+                </xsl:call-template>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:value-of select="$str"/>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
 	<!-- Attribute Property -->
 	<xsl:template match="@*">
 		<xsl:text>"@</xsl:text>
