@@ -19,6 +19,7 @@
             </LIST_FP_ID>
             <FP_ITEMS_COUNT>3</FP_ITEMS_COUNT>
             <MATCODE>815005310003</MATCODE>
+			<MATCODE>true</MATCODE>
         </Row>
     </Rowset>
     <Messages>

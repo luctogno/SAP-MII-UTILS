@@ -19,6 +19,8 @@
             </LIST_FP_ID>
             <FP_ITEMS_COUNT>3</FP_ITEMS_COUNT>
             <MATCODE>815005310003</MATCODE>
+			<ANNI>{"test":"sdfd"}</ANNI>
+			<ARR>[{"test":"sdfd"}]</ARR>
         </Row>
     </Rowset>
     <Messages>

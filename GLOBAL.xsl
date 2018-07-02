@@ -1,5 +1,4 @@
-<?xml version="1.0"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
 	<xsl:output indent="no" method="xml" omit-xml-declaration="yes"/>
 	<xsl:template match="/Rowsets">
 		<xsl:text>{</xsl:text>
@@ -67,13 +66,13 @@
 		<xsl:variable name="childName" select="name(*[1])"/>
 		<xsl:choose>
 			<xsl:when test="not(*)">
-			
+
 				<xsl:variable name="valore" select="."/>
 				<xsl:choose>
-					<xsl:when test="number($valore) = $valore">
-						<!-- Senza apici per numerici e booleani -->
+					<!-- <xsl:when test="number($valore) = $valore">
+						 Senza apici per numerici e booleani 
 						<xsl:value-of select="."/>
-					</xsl:when>
+					</xsl:when> -->
 					<xsl:when test="$valore = 'true'">
 						<!-- Senza apici per numerici e booleani -->
 						<xsl:value-of select="."/>
@@ -112,21 +111,21 @@
 		<xsl:call-template name="escapeQuote">
 			<xsl:with-param name="pText">
 				<xsl:call-template name="jsonescape">
-					<xsl:with-param name="str" select="." />
-				</xsl:call-template>          
+					<xsl:with-param name="str" select="."/>
+				</xsl:call-template>
 			</xsl:with-param>
 		</xsl:call-template>
 	</xsl:template>
 
 	<xsl:template name="escapeQuote">
-		<xsl:param name="pText" select="concat(normalize-space(.), '')" />
-		<xsl:if test="string-length($pText) >0">
-			<xsl:value-of select="substring-before(concat($pText, '&quot;'), '&quot;')" />
+		<xsl:param name="pText" select="concat(normalize-space(.), '')"/>
+		<xsl:if test="string-length($pText) &gt;0">
+			<xsl:value-of select="substring-before(concat($pText, '&quot;'), '&quot;')"/>
 
 			<xsl:if test="contains($pText, '&quot;')">
 				<xsl:text>\"</xsl:text>    
 				<xsl:call-template name="escapeQuote">
-					<xsl:with-param name="pText" select="substring-after($pText, '&quot;')" />
+					<xsl:with-param name="pText" select="substring-after($pText, '&quot;')"/>
 				</xsl:call-template>
 			</xsl:if>
 
@@ -143,10 +142,39 @@
 				</xsl:call-template>
 			</xsl:when>
 			<xsl:otherwise>
-				<xsl:value-of select="$str"/>
+				<xsl:call-template name="string-replace-all">
+					<xsl:with-param name="text" select="$str"/>
+					<xsl:with-param name="replace" select="'---'"/>
+					<xsl:with-param name="by" select="''"/>
+				</xsl:call-template>
 			</xsl:otherwise>
 		</xsl:choose>
 	</xsl:template>
+
+	<xsl:template name="string-replace-all">
+		<xsl:param name="text"/>
+		<xsl:param name="replace"/>
+		<xsl:param name="by"/>
+		<xsl:choose>
+			<xsl:when test="$text = '' or $replace = ''or not($replace)">
+				<!-- Prevent this routine from hanging -->
+				<xsl:value-of select="$text"/>
+			</xsl:when>
+			<xsl:when test="contains($text, $replace)">
+				<xsl:value-of select="substring-before($text,$replace)"/>
+				<xsl:value-of select="$by"/>
+				<xsl:call-template name="string-replace-all">
+					<xsl:with-param name="text" select="substring-after($text,$replace)"/>
+					<xsl:with-param name="replace" select="$replace"/>
+					<xsl:with-param name="by" select="$by"/>
+				</xsl:call-template>
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:value-of select="$text"/>
+			</xsl:otherwise>
+		</xsl:choose>
+	</xsl:template>
+	
 	<!-- Attribute Property -->
 	<xsl:template match="@*">
 		<xsl:text>"@</xsl:text>
